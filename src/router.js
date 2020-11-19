@@ -1,9 +1,11 @@
-const { homeHandler, publicHandler } = require('./handler');
+const { apiHandler, homeHandler, publicHandler } = require('./handler');
 
 const router = (req, res) => {
   const endpoint = req.url;
   if (endpoint === '/') {
     homeHandler(req, res, endpoint);
+  } else if (endpoint === '/search') {
+    apiHandler(req, res);
   } else if (endpoint.includes('/')) {
     publicHandler(req, res, endpoint);
   } else {
