@@ -69,6 +69,13 @@ form{
     cursor: pointer;
   }
 
+  .option {
+    cursor: pointer;
+  }
+  .option:hover {
+    background-color: grey;
+  }
+
   .word_list{
     align-self: center;
     padding: 5px;
@@ -79,5 +86,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: whitesmoke;
+  }
+
+  .word-result{
+    font-size: 1.5rem;
   }
