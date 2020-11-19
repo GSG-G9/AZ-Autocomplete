@@ -9,6 +9,10 @@ let url;
 
 const filterByName = (arr, val) => arr.filter((x) => x.toLowerCase().indexOf(val.toLowerCase()) === 0);
 
+if (typeof module !== 'undefined') { module.exports = filterByName; }
+
+
+
 const enteredWord = (e) => {
   apiFunction(apiUrl, (res) => {
     wordList.textContent = '';
