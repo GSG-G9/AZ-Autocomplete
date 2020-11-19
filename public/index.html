@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Words</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+        <div class="big_div">
+            <div class="main_div">
+        <h1 class="entry_message">Words Everywhere</h1>
+        <h3 class="search_head">start typing letters to know more!</h3>
+
+        <div class="word_search_form">
+          <form class="search_form" id="search_form">
+            <input
+              type="text"
+              id="search__word"
+              name="search"
+              placeholder="Enter a word"
+              class="search__word"
+              autocomplete="off"
+            />
+            <button class="form__btn" type="submit">Search</button>
+          </form>
+          <div class="word_list"></div>
+        </div>
+
+        <div class="search_result"></div>
+      </div>
+        </div>
+      
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
